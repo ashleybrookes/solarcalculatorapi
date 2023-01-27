@@ -34,9 +34,10 @@ namespace SolarCalculator.Controllers
         }
 
         [HttpGet("{city}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<LocationSolarData>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Get_IActionResult(string city)
+        public IActionResult Get_IActionResult(string city)
         {
             //todo make this return the data
             //look up example where we hand in the city maybe
