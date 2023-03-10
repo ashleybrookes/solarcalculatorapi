@@ -50,8 +50,10 @@ namespace SolarCalculator
                 public double HourAngle_deg;
 
                 public double SolarZenithAngle_deg;
-                public double SolarElevationAngle_deg)	Approx Atmospheric Refraction (deg)	Solar Elevation corrected for atm refraction (deg)	Solar Azimuth Angle (deg cw from N)
-
+                public double SolarElevationAngle_deg;
+                public double ApproxAtmosphericRefraction_deg;
+                public double SolarElevationCorrectedForAtmRefraction_deg;
+                public double SolarAzimuthAngle_degCwFromN;
 
     }
 
