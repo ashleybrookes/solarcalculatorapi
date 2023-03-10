@@ -1,6 +1,6 @@
-# SolarCalculatorApi
+# SolarCalculatorApi - In development
 
-We are going to provide an estimate of how much electricity your solar PV system will produce at any minute of a given day. It will only need to know your city/town, PV Max, Roof inclination and date.
+The api will provide an estimate of how much electricity your solar PV system will produce at any minute of a given day. It will only need to know your city/town, PV Max, Roof inclination and date.
 
 ## How will it do this?
 It will first look up the city latitude and longitude data from the city name.
