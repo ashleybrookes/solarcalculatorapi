@@ -6,7 +6,6 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Collections;
 
-
 namespace SolarCalculator.Controllers
 {
     [ApiController]
@@ -21,7 +20,7 @@ namespace SolarCalculator.Controllers
             { "gothenburg" , 11.97 },
             { "london" ,0.12 }
         };
-        private static readonly Hashtable cityLatitudeCoordinates = new Hashtable
+            private static readonly Hashtable cityLatitudeCoordinates = new Hashtable
         {
             { "berlin" , 52.5 },
             { "gothenburg" , 57.71 },
@@ -50,13 +49,16 @@ namespace SolarCalculator.Controllers
                 //todo return proper message in the bad request
                 BadRequest();
             }
+            city = city.ToLower();
+
+            //todo:load city data from json file
             List<LocationSolarData> listSolarData = new List<LocationSolarData>();
 
-            if (cityLatitudeCoordinates[city] == null) {
+            if (cityLatitudeCoordinates[city.ToLower()] == null) {
                 return NotFound();
             }
             
-            if (cityLongitudeCoordinates[city] == null) {
+            if (cityLongitudeCoordinates[city.ToLower()] == null) {
                 return NotFound();
             }
             double citylat = (double)cityLatitudeCoordinates[city];
