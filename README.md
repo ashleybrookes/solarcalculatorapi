@@ -2,8 +2,6 @@
 
 We are going to provide an estimate of how much electricity your solar PV system will produce at any minute of a given day. It will only need to know your city/town, PV Max, Roof inclination and date.
 
-The project is written in c# 9
-
 ## How will it do this?
 It will first look up the city latitude and longitude data from the city name.
 
