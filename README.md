@@ -7,7 +7,7 @@ It will first look up the city latitude and longitude data from the city name.
 
 It will then estimate the percentage of PV max from the elevation of the sun in the sky.
 
-To find the elevation of the sun it will use astronomical algorthms. The alogrithms were given to made available by the Earth System Research Labitories Global Monitoring Laboratory (GML) of the National Oceanic and Atmospheric Administration.
+To find the elevation of the sun it will use astronomical algorithms. The alogrithms were given to made available by the Earth System Research Labitories Global Monitoring Laboratory (GML) of the National Oceanic and Atmospheric Administration.
 https://gml.noaa.gov/grad/solcalc/calcdetails.html
 
 Originally these algorthims were published by Jean Meeus.
